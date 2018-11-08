@@ -1,0 +1,48 @@
+@import "../template/mixins";
+@import "../template/settings";
+
+$mainColor: #111;
+$backgroundColor: #fafafa;
+$blockMargin: 1em;
+
+$headingColor: #FF0086;
+$headingFont: "Neutra Text", sans-serif;
+$headingFontWeight: 500;
+$headingLetterSpacing: -0.03em;
+$headingLineHeight: 1;
+$headingTextShadow: none;
+$headingTextTransform: none;
+$heading1Size: 2.5em;
+
+@import "../template/theme";
+
+.reveal {
+  .slides {
+    text-align: left;
+  }
+
+  li {
+    line-height: 1.5;
+    margin-bottom: 0.25em;
+  }
+
+  .white-heading {
+    color: #fefefe !important;
+  }
+
+  .background-heading {
+    display: inline-block;
+    padding: 0.2em 0.2em 0;
+    background: #fafafa;
+    color: #111;
+  }
+
+  .heading-comment {
+    margin-top: -0.75em;
+    font-size: 0.75em;
+  }
+
+  .flex {
+    display: flex;
+  }
+}

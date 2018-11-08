@@ -1,0 +1,297 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Skapa elektronisk musik med synthar</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/synth.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Skapa elektronisk musik med synthar</h1>
+					<p><small>November 2018</small></p>
+				</section>
+
+				<section>
+					<section data-background-iframe="https://www.youtube.com/embed/Ig6vIRmfoNI?autoplay=true"></section>
+					<section data-background-color="#111">
+						<h1 class="white-heading fragment">Elektronisk musik:<br />en komplicerad, mystisk och ödesmättad värld!</h1>
+					</section>
+					<section><p>...eller?</p></section>
+				</section>
+
+				<section>
+					<h2>Alexander Wallin</h2>
+
+					<p>Född 1988 i Timrå. Musiker och webbutvecklare.</p>
+
+					<iframe width="45%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/328759035&color=%23ff5500&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+					<iframe width="45%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/316031291&color=%23ff5500&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+
+					<p>
+						<br />
+						<small>
+							<strong>Kontakt:</strong>
+							&nbsp;
+							hi@alexanderwallin.com
+							&nbsp; &middot; &nbsp; 
+							070-2850391
+						</small>
+					</p>
+
+				</section>
+
+				<section>
+					<section><h1>Kursens upplägg</h1></section>
+					<section>
+						<h3>Kursens upplägg</h3>
+						<p class="fragment fade-in"><strong>Träff 1:</strong> Den analoga synthen</p>
+						<p class="fragment fade-in"><strong>Träff 2:</strong> Trummaskiner och sequencers</p>
+						<p class="fragment fade-in"><em>En veckas vila</em></p>
+						<p class="fragment fade-in"><strong>Träff 3:</strong> Utforskande, uppträdande och jam</p>
+					</section>
+				</section>
+
+				<section>
+					<h2>Kort om tekniken</h2>
+					<ul>
+						<li>Varje synth har en ljudutgång</li>
+						<li>Ljudkort och DAW</li>
+					</ul>
+				</section>
+
+				<section>
+					<section><h1>Vad är en synth?</h1></section>
+					<section>
+						<h3>Synth vs keyboard</h3>
+						<ul>
+							<li class="fragment">En <strong>keyboard</strong> spelar upp förinspelade ljud, t.ex. piano eller fiol. <span class="fragment">Med keyboard kan också menas ett klaviatur.</span></li>
+							<li class="fragment">En <strong>synth</strong> generar ljud från scratch.</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Några olika typer av synthar</h3>
+						<ul>
+							<li class="fragment">Frequency modulation (FM)</li>
+							<li class="fragment">Granular</li>
+							<li class="fragment">Modular</li>
+							<li class="fragment">Det vi ska lära oss: <strong class="fragment">Subtractive synthesis! 🦄🦄🦄</strong></li>
+						</ul>
+					</section>
+					<section>
+						<h3>Flertonighet</h3>
+
+						<p class="fragment">Olika synthar stödjer olika många samtida toner:</p>
+
+						<ul>
+							<li class="fragment"><strong>Monophonic</strong> - kan endast spela en ton åt gången</li>
+							<li class="fragment"><strong>Polyphonic</strong> - kan spela två eller flera toner samtidigt</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section><h1>A brief history of synth</h1></section>
+					<section data-background-iframe="https://www.youtube.com/embed/k_YUB_S6Gpo?start=17"></section>
+
+					<section data-background-image="assets/Hammond_b3_con_leslie_122.jpg"></section>
+
+					<section data-background-iframe="https://www.youtube.com/embed/H36dI0wTO-k"></section>
+
+					<section data-background-image="assets/huge-synth.jpg">
+					</section>
+
+					<section data-background-iframe="https://www.youtube.com/embed/WY2AeD0Tn4Y?start=170"></section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Synthens grundkomponenter</h1>
+						<p><small>(Subtractive synthesis)</small></p>
+					</section>
+
+					<section>
+						<div class="flex">
+							<h3>1. Oscillator</h3>
+							<span style="padding: 0 24px;">&rarr;</span>
+							<h3>2. Filter</h3>
+							<span style="padding: 0 24px;">&rarr;</span>
+							<h3>3. Envelope</h3>
+						</div>
+					</section>
+
+					<section>
+						<h2>1. Oscillator</h2>
+						<div class="heading-comment">aka Source aka VCO</div>
+
+						<p class="fragment">
+							Genererar en elektronisk signal med en viss vågform.
+							<br />
+							<span class="fragment">En synth har oftast flera oscillatorer.</span>
+						</p>
+
+						<div class="flex">
+							<div style="flex-basis: 60%;">
+								<p class="fragment" style="margin-top: 0;">De vanligaste vågformerna:</p>
+
+								<ul>
+									<li class="fragment">Sine <em>(sinus)</em> <img style="margin: 0; border: none; box-shadow: none;" src="assets/sine.png" width="32" height="32" /></li>
+									<li class="fragment">Sawtooth <em>(sågtand)</em> <img style="margin: 0; border: none; box-shadow: none;" src="assets/saw.png" width="32" height="32" /></li>
+									<li class="fragment">Square <em>(fyrkant)</em> <img style="margin: 0; border: none; box-shadow: none;" src="assets/square.png" width="32" height="32" /></li>
+									<li class="fragment">Triangle <em>(trekant)</em> <img style="margin: 0; border: none; box-shadow: none;" src="assets/triangle.png" width="32" height="32" /></li>
+								</ul>
+							</div>
+
+							<div style="flex-basis: 40%;">
+								<p class="fragment" style="margin-top: 0;">Våglängd (oktaver):</p>
+								<p class="fragment">Ett intervall någonstans mellan 32" och 1"</p>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<h2>2. Filter</h2>
+						<div class="heading-comment">aka VCF</div>
+
+						<p class="fragment">Skär bort frekvenser. Ger ljudet karaktär.</p>
+
+						<div class="flex">
+							<ul style="margin-right: 64px;">
+								<li class="fragment">Cutoff (frequency) <em>(frekvens)</em></li>
+								<li class="fragment">Resonance aka Peak <em>(resonans)</em></li>
+							</ul>
+
+							<img class="fragment" src="assets/resonance_diagram.png" width="300" height="160"/>
+						</div>
+					</section>
+
+					<section>
+						<h2>3. Envelope</h2>
+						<div class="heading-comment">
+							aka EG
+							<br />
+							<em>(Kontur)</em>
+						</div>
+
+						<p class="fragment">Formar ljudet över tid (modulation = vrid på rattarna åt mig). Triggas oftast vid varje tangentanslag.</p>
+
+						<p class="fragment">Den vanligaste typen är <strong>ADSR</strong> - <em>attack</em>, <em>decay</em>, <em>sustain</em> och <em>release</em>.</p>
+					</section>
+
+					<section 
+						data-background-color="#04303d"
+						data-background-image="assets/ASDR-01.jpg" 
+						data-background-size="contain">
+					</section>
+
+					<section>
+						<h2>3. Envelope</h2>
+						<div class="heading-comment">
+							aka EG
+							<br />
+							<em>(Kontur)</em>
+						</div>
+
+						<p class="fragment">Två vanliga kopplingar:</p>
+
+						<ul>
+							<li class="fragment">Amplitude envelope</li>
+							<li class="fragment">Filter envelope</li>
+						</ul>
+					</section>
+
+					<section data-background-image="assets/emersonmoogphoto.jpg">
+						<h1 class="background-heading">Lek!</h1>
+					</section>
+				</section>
+
+				<section>
+					<section><h1>Andra vanliga inslag</h1></section>
+
+					<section>
+						<ul>
+					    <li>Pulse-width modulation</li>
+					    <li>Ring modulation</li>
+					    <li>Noise generator</li>
+					    <li>Keyboard filter tracking</li>
+					    <li>Velocity <em>(tryckkänslighet)</em></li>
+					    <li>Portamento aka glissando aka glide</li>
+					    <li>Pitch wheel</li>
+					    <li>Modulation wheel</li>
+					    <li class="fragment"><strong>LFO!</strong> 🐬🐳🦋</li>
+					  </ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>LFO</h1>
+						<div class="heading-comment">Low-frequency oscillator</div>
+					</section>
+
+					<section>
+						<h2>LFO</h2>
+
+						<p>
+							<span class="fragment">Förändrar parametrar cykliskt över tid.</span>
+							<br />
+							<span class="fragment">Gör ljud mer intressanta och levande.</span>
+						</p>
+
+						<p class="fragment">Vanliga applikationer:</p>
+
+						<ul>
+							<li class="fragment">Öppna och stäng filtret</li>
+							<li class="fragment">Höj och sänk pitch <em>(tonhöjd)</em> = vibrato!</li>
+							<li class="fragment">Modulera vågformer</li>
+						</ul>
+					</section>
+
+					<section data-background-image="assets/2fq4k85kks6t.jpg">
+						<h1 class="background-heading">Lek!</h1>
+					</section>
+				</section>
+
+				<section>
+					<h1>Tack för idag!</h1>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				controlsTutorial: false,
+				history: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
